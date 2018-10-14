@@ -1,0 +1,63 @@
+/*centered*/
+div.container-center{
+    display:flex;
+    position:fixed;
+    justify-content: center;
+    text-align:center;
+    margin-top: 850px;
+
+    width:35%;
+}
+
+div.left-centered{
+    margin-left: 500px;
+}
+
+div.right-centered{
+    margin-left: 1300px;
+}
+
+div.leftTwitter-centered{
+    margin-top: 10px;
+}
+div.rightTwitter-centered{
+    margin-top: 10px;
+}
+
+/*non centered*/
+div.container{
+    position:fixed;
+    margin-top: 435px;
+    font-size:40pt;
+}
+
+div.left{
+    position: fixed;
+    text-align: right;
+    margin-left: 65px;
+    width: 35%;
+}
+div.right{
+    position:fixed;
+    text-align: left;
+    margin-left: 1175px;
+
+}
+
+div.leftTwitter{
+    position: fixed;
+    text-align: right;
+    margin-left: 180px;
+    font-size:16pt;
+    margin-top: 503px;
+    letter-spacing: 0pt;
+    width: 30%;
+}
+div.rightTwitter{
+    position: fixed;
+    text-align: left;
+    font-size:16pt;
+    margin-top: 503px;
+    margin-left: 1165px;
+    letter-spacing: 0pt;
+}

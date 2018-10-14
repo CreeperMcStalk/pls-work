@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../resources/styles/lowerThird.css" />-->
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="../node_modules/axios/dist/axios.js"></script>
+
+  <style>
+    div.container{
+        float: left;
+        width: 45%;
+
+        margin-top:805px;
+        margin-left: 25px;
+
+        text-transform: none
+    }
+
+    div.lowerThirdL1{
+        font-size: 55pt;
+    }
+
+    div.lowerThirdL2{
+        font-size: 24pt;
+        margin-top: -5px;
+        letter-spacing: 0pt;
+    }
+
+    div.lowerThirdL3{
+        font-size: 18pt;
+        font-weight: 100;
+        font-family: 'Arial';
+        letter-spacing: 0pt;
+        margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class='container'>
+        <div class="lowerThirdL1 skewed-slight">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.lower_third_l1" v-html="info.lower_third_l1"></span>
+            </transition>
+        </div>
+        <div class='lowerThirdL2 skewed-slight'>
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.lower_third_l2" v-html="info.lower_third_l2"></span>
+            </transition>
+        </div>
+        <div class='lowerThirdL3 skewed-slight'>
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.lower_third_l3" v-html="info.lower_third_l3"></span>
+            </transition>
+        </div>
+
+    </div>
+  </div>
+</body>
+
+<!-- This needs to be loaded after the dom -->
+<script src="../resources/js/vue-main.minimal.js"></script>
+
+</html>

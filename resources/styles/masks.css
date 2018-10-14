@@ -1,0 +1,48 @@
+div.flag-mask-left{
+	-webkit-mask: url('../images/Masks/FlagMask.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask: url('../images/Masks/FlagMask.png');
+    mask-image: url('../images/Masks/FlagMask.png');
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+div.flag-mask-right{
+	-webkit-mask: url('../images/Masks/FlagMaskRev.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask: url('../images/Masks/FlagMaskRev.png');
+    mask-image: url('../images/Masks/FlagMaskRev.png');
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+div.h2h-mask-left{
+	-webkit-mask: url('../images/Masks/h2h-mask-left-x.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask: url('../images/Masks/h2h-mask-left-x.png');
+    mask-size: cover;
+    mask-position: right;
+    mask-repeat: no-repeat;
+	mask-image: url('../images/Masks/h2h-mask-left-x.png')
+}
+
+div.h2h-mask-right{
+	-webkit-mask: url('../images/Masks/h2h-mask-right-x.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask: url('../images/Masks/h2h-mask-right-x.png');
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+	mask-image: url('../images/Masks/h2h-mask-right-x.png')
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../resources/styles/commentary.css" />-->
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="../node_modules/axios/dist/axios.js"></script>
+
+  <style>
+    /*centered*/
+    div.container-center{
+        display:flex;
+        position:fixed;
+        justify-content: center;
+        text-align:center;
+        margin-top: 850px;
+
+        width:35%;
+    }
+
+    div.left-centered{
+        margin-left: 500px;
+    }
+
+    div.right-centered{
+        margin-left: 1300px;
+    }
+
+    div.leftTwitter-centered{
+        margin-top: 10px;
+    }
+    div.rightTwitter-centered{
+        margin-top: 10px;
+    }
+
+    /*non centered*/
+    div.container{
+        position:fixed;
+        margin-top: 435px;
+        font-size:40pt;
+    }
+
+    div.left{
+        position: fixed;
+        text-align: right;
+        margin-left: 65px;
+        width: 35%;
+    }
+    div.right{
+        position:fixed;
+        text-align: left;
+        margin-left: 1175px;
+
+    }
+
+    div.leftTwitter{
+        position: fixed;
+        text-align: right;
+        margin-left: 180px;
+        font-size:16pt;
+        margin-top: 503px;
+        letter-spacing: 0pt;
+        width: 30%;
+    }
+    div.rightTwitter{
+        position: fixed;
+        text-align: left;
+        font-size:16pt;
+        margin-top: 503px;
+        margin-left: 1165px;
+        letter-spacing: 0pt;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class='container'>
+        
+        <div class="container left skewed-rev">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.event_comm" v-html="info.event_comm"></span>
+            </transition>
+        </div>
+
+        <div class="container right skewed">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.event_comm2" v-html="info.event_comm2"></span>
+            </transition>
+        </div>
+
+        <div class="container leftTwitter skewed-rev">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.event_comm_twitter" v-html="info.event_comm_twitter"></span>
+            </transition>
+        </div>
+
+        <div class="container rightTwitter skewed">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.event_comm2_twitter" v-html="info.event_comm2_twitter"></span>
+            </transition>
+        </div>
+
+    </div>
+  </div>
+</body>
+
+<!-- This needs to be loaded after the dom -->
+<script src="../resources/js/vue-main.minimal.js"></script>
+
+</html>

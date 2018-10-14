@@ -1,0 +1,187 @@
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
+.slide-fade-leave-active {
+  transition: all .7s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.on-top{
+  z-index: 5 !important;
+}
+
+.on-bottom{
+  z-index: -5 !important;
+}
+
+img.reverse{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+video.reverse{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+img.reverse-horizontal{
+  transform: rotateX(180deg);
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url('../fonts/GillSans.ttc');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Khand Medium";
+  src: url('../fonts/Khand-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Lemon Milk";
+  src: url('../fonts/LemonMilk.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "AvantGardeITC";
+  src: url('../fonts/texgyreadventor-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "OPTIAlternate";
+  src: url('../fonts/OPTIAlternateThree.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "MilfordCondensedBold";
+  src: url('../fonts/MILF___B.TTF');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  font-family: 'MilfordCondensedBold';
+  font-size: 20pt;
+  letter-spacing: -3px;
+  text-shadow: 1px 1px 3px #000;
+  text-transform: uppercase;
+  color: white;
+}
+
+t {
+  /* TAGS? To be added when actually inputting player names... not sure I like that format. */
+  text-transform: none;
+  margin-right: 5px;
+  color:  #f5cb0d;
+  /*color: #33ccff ; */
+  /*LIGHT BLUE */
+  text-shadow: 1px 1px 3px #000;
+}
+
+l {
+  /* TAGS? To be added when actually inputting player names... not sure I like that format. */
+  text-transform: none;
+  margin-right: 5px;
+  color: red;
+  /*color: #428cf4 ; */
+  /*LIGHT BLUE */
+  text-shadow: 1px 1px 3px #000;
+}
+
+rcs {
+  /* Recursion Colored Sponsor Tag */
+  text-transform: none;
+  margin-right: 5px;
+  /*color: yellow;*/
+  color: #33ccff ; 
+  text-shadow: 1px 1px 3px #000;
+}
+
+.skewed-slight{
+  -moz-transform:    skew(-5deg, 0deg);
+  -o-transform:      skew(-5deg, 0deg);
+  -webkit-transform: skew(-5deg, 0deg);
+  transform:         skew(-5deg, 0deg);
+}
+
+.skewed {
+  -moz-transform:    skew(-20deg, 0deg);
+  -o-transform:      skew(-20deg, 0deg);
+  -webkit-transform: skew(-20deg, 0deg);
+  transform:         skew(-20deg, 0deg);
+}
+
+.skewed-rev {
+  -moz-transform:    skew(20deg, 0deg);
+  -o-transform:      skew(20deg, 0deg);
+  -webkit-transform: skew(20deg, 0deg);
+  transform:         skew(20deg, 0deg);
+}
+
+div.gradient-container{
+  height: 50px;
+  width: 100px;
+}
+
+div.gradient-container>blue-left{
+  background: linear-gradient(white, blue);
+}
+
+div.gradient-container>blue-right{
+  background: linear-gradient(blue, white);
+}
+
+
+div.gradient-container>green-left{
+  background: linear-gradient(white, green);
+}
+
+div.gradient-container>green-right{
+  background: linear-gradient(green, white);
+}
+
+
+div.gradient-container>red-left{
+  background: linear-gradient(white, red);
+}
+
+div.gradient-container>red-right{
+  background: linear-gradient(red, white);
+}
+
+
+div.gradient-container>yellow-left{
+  background: linear-gradient(white, yellow);
+}
+
+div.gradient-container>yellow-right{
+  background: linear-gradient(yellow, white);
+}
